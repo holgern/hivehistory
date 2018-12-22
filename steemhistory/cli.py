@@ -15,20 +15,18 @@ import os
 import io
 import argparse
 import re
-# python 3
-from urllib.request import urlretrieve
+import six
 
 from beem.instance import set_shared_steem_instance, shared_steem_instance
 from steemhistory.version import version as __version__
-
+# python 3
+if six.PY3:
+    from urllib.request import urlretrieve
+else:
+    from urllib import urlretrieve
+    
 click.disable_unicode_literals_warning = True
 log = logging.getLogger(__name__)
-try:
-    # python 3
-    from urllib.request import urlretrieve
-except ImportError:
-    # python 2
-    from urllib import urlretrieve
 
 
 def get_urls(mdstring):
