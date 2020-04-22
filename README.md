@@ -1,21 +1,21 @@
-# steemhistory
-Python tools for obtaining and processing account history of a steem account
+# hivehistory
+Python tools for obtaining and processing account history of a hive account
 
-[![Build Status](https://travis-ci.org/holgern/steemhistory.svg?branch=master)](https://travis-ci.org/holgern/steemhistory)
-[![Build status](https://ci.appveyor.com/api/projects/status/xkfm06q0otydqxa1?svg=true)](https://ci.appveyor.com/project/holger80/steemhistory)
+[![Build Status](https://travis-ci.org/holgern/hivehistory.svg?branch=master)](https://travis-ci.org/holgern/hivehistory)
+[![Build status](https://ci.appveyor.com/api/projects/status/xkfm06q0otydqxa1?svg=true)](https://ci.appveyor.com/project/holger80/hivehistory)
 
 ## Installation
 ```
-pip install steemhistory
+pip install hivehistory
 ```
 
 
 ## Commands
 All steem posts from an account can be stored as markdown files with
 ```
-steemhistory posts holger80 .
+hivehistory posts holger80 .
 ```
 When also all images should be stored, a second folder path can be given:
 ```
-steemhistory posts holger80 . ./images
+hivehistory posts holger80 . ./images
 ```
